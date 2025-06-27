@@ -6,7 +6,7 @@ services:
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: python pdf_to_video_api.py
+    startCommand:  gunicorn --bind 0.0.0.0:$PORT pdf_to_video_api:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
