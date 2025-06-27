@@ -67,6 +67,6 @@ def upload_pdf():
     final_video.write_videofile(output_video, fps=24)
 
     return send_file(output_video, as_attachment=True)
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host='0.0.0.0', port=port)
