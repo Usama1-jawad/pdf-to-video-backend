@@ -46,7 +46,7 @@ def upload_pdf():
     os.makedirs(image_dir, exist_ok=True)
     pipe = StableDiffusionPipeline.from_pretrained(
         "runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16
-    ).to("cuda")
+    ).to("cpu")
 
     image_files = []
     for i, para in enumerate(paragraphs):
