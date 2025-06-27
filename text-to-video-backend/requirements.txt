@@ -3,7 +3,7 @@ pdfplumber==0.11.7
 gTTS==2.5.4
 diffusers==0.33.1
 transformers==4.52.4
-torch==2.3.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
 moviepy==1.0.3
 Pillow==10.3.0
 
